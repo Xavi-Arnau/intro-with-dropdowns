@@ -27,7 +27,10 @@ const Dropdown = ({ caption, links }) => {
         <div className="w-max absolute bg-white shadow-xl p-4 rounded-xl right-0 text-sm">
           <ul className="flex flex-col gap-4 p-4">
             {links.map((item) => (
-              <li key={item.name} className="flex flex-row gap-4 items-center">
+              <li
+                key={item.name}
+                className="flex flex-row gap-4 items-center hover:scale-110"
+              >
                 {item.icon ? <img src={item.icon} alt="" /> : null}
                 {item.name}
               </li>
