@@ -18,8 +18,8 @@ const DropdownSlide = ({ caption, links }) => {
       <div
         className={
           isVisible
-            ? " bg-white  text-sm ease-in duration-500"
-            : " ease-in duration-500 hidden"
+            ? " bg-white  text-sm animate-in slide-in-from-top duration-500"
+            : " hidden"
         }
       >
         <ul className="flex flex-col gap-4 p-4">

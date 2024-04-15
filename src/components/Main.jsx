@@ -44,7 +44,11 @@ const Main = () => {
           </div>
         </div>
         <div className=" md:w-1/2 md:flex justify-end order-first md:order-last">
-          <img src={heroDesktop} alt="" className="hidden md:block h-[750px]" />
+          <img
+            src={heroDesktop}
+            alt=""
+            className="hidden md:block max-h-[750px] object-cover"
+          />
           <img src={heroMobile} alt="" className=" md:hidden w-full" />
         </div>
       </div>
